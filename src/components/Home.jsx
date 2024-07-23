@@ -11,7 +11,7 @@ import { FaReact, FaNodeJs } from "react-icons/fa";
 const Home = () => {
   return (
     <>
-      <div className="max-w-screen-2xl container mx-auto px-4 md:px-20 my-20">
+      <div name="Home" className="max-w-screen-2xl container mx-auto px-4 md:px-20 my-20">
         <div className="flex flex-col items-center">
           <div className="w-full sm:mt-12 md:mt-24 text-center">
             <span className="text-xl text-gray-600">Welcome to my feed.</span>
