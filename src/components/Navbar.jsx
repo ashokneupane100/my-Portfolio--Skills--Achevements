@@ -47,12 +47,14 @@ function Navbar() {
           <div>
             {/* Desktop nav bar */}
             <ul className="hidden md:flex space-x-8">
-             {
-              navItems.map(({id,text})=>(
-                <li className="hover:scale-105 duration-200 cursor-pointer" key={id}>{text}</li>
-              ))
-             }
-           
+              {navItems.map(({ id, text }) => (
+                <li
+                  className="hover:scale-105 duration-200 cursor-pointer"
+                  key={id}
+                >
+                  {text}
+                </li>
+              ))}
             </ul>
 
             <div onClick={() => setMenu(!menu)} className="md:hidden">
@@ -70,11 +72,14 @@ function Navbar() {
         {menu && (
           <div>
             <ul className="md:hidden flex flex-col h-screen items-center justify-center space-y-4 text-xl">
-            {
-              navItems.map(({id,text})=>(
-                <li className="hover:scale-105 duration-200 font-semibold cursor-pointer space-y-3" key={id}>{text}</li>
-              ))
-             }
+              {navItems.map(({ id, text }) => (
+                <li
+                  className="hover:scale-105 duration-200 font-semibold cursor-pointer space-y-3"
+                  key={id}
+                >
+                  {text}
+                </li>
+              ))}
             </ul>
           </div>
         )}
