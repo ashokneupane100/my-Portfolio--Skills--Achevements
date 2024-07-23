@@ -12,15 +12,15 @@ const Home = () => {
   return (
     <>
       <div className="max-w-screen-2xl container mx-auto px-4 md:px-20 my-20">
-        <div className="flex flex-col md:flex-row">
-          <div className="md:w-1/2 sm:mt-12 md:mt-24">
+        <div className="flex flex-col items-center">
+          <div className="w-full sm:mt-12 md:mt-24 text-center">
             <span className="text-xl text-gray-600">Welcome to my feed.</span>
-            <div className="flex space-x-2 text-2xl md:text-4xl mt-2">
+            <div className="flex justify-center items-center space-x-2 text-2xl md:text-4xl mt-2">
               <h1 className="font-bold">Hello, I am a</h1>
               <span className="text-red-700 font-bold">Developer</span>
             </div>
 
-            <p className="text-sm md:text-md text-justify text-gray-700 mt-4">
+            <p className="text-sm md:text-md text-justify text-gray-700 mt-4 mx-auto max-w-2xl">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
               dolor aut itaque eligendi laborum ea? Magnam, impedit unde. Est
               expedita iure aut laboriosam debitis necessitatibus similique
@@ -28,10 +28,10 @@ const Home = () => {
             </p>
 
             {/* Social Media icons */}
-            <div className="flex flex-col md:flex-row justify-between items-center md:items-start mt-8 space-y-6 md:space-y-0 md:space-x-12">
-              <div className="space-y-2 text-center md:text-left">
+            <div className="flex flex-col md:flex-row justify-center items-center mt-8 space-y-6 md:space-y-0 md:space-x-12">
+              <div className="space-y-2 text-center">
                 <h1 className="font-bold text-xl">Available on:</h1>
-                <ul className="flex space-x-5 justify-center md:justify-start">
+                <ul className="flex space-x-5 justify-center">
                   <li>
                     <a href="https://www.facebook.com/" target="_blank">
                       <FaFacebookSquare className="text-3xl cursor-pointer hover:text-blue-600" />
@@ -45,7 +45,7 @@ const Home = () => {
                   </li>
                   <li>
                     <a href="https://www.youtube.com/" target="_blank">
-                      <FaYoutube className="text-3xl cursor-pointer hover:text-blue-600" />
+                      <FaYoutube className="text-3xl cursor-pointer hover:text-red-600" />
                     </a>
                   </li>
                   <li>
@@ -55,9 +55,9 @@ const Home = () => {
                   </li>
                 </ul>
               </div>
-              <div className="space-y-2 text-center md:text-left">
+              <div className="space-y-2 text-center">
                 <h1 className="font-bold text-xl">Currently Working on:</h1>
-                <div className="flex space-x-5 justify-center md:justify-start">
+                <div className="flex space-x-5 justify-center">
                   <DiMongodb className="text-3xl hover:scale-110 duration-200 cursor-pointer" />
                   <SiExpress className="text-3xl hover:scale-110 duration-200 cursor-pointer" />
                   <FaReact className="text-3xl hover:scale-110 duration-200 cursor-pointer" />

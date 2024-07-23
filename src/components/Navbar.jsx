@@ -40,7 +40,7 @@ function Navbar() {
             <img src={pic} className="h-12 w-12 rounded-full" alt="" />
             <h1 className="font-semibold text-xl cursor-pointer">
               Ashok <span className="text-green-800 text-2xl">Neupane</span>
-              <p className="text-sm">Web/App Developer</p>
+              <p className="text-sm">Full Stack Web Developer</p>
             </h1>
           </div>
 
