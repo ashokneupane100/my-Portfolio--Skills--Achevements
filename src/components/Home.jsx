@@ -1,4 +1,4 @@
-import pic from "../../public/photo.avif";
+import pic from "../../public/mernStack.jpg";
 
 import { FaSquareFacebook } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa";
@@ -86,7 +86,7 @@ function Home() {
             <img
               src={pic}
               className="rounded-full md:w-[450px] md:h-[450px]"
-              alt=""
+              alt="Programmer"
             />
           </div>
         </div>

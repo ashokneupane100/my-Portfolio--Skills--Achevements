@@ -26,9 +26,14 @@ function Contact() {
 
   return (
     <>
-      <div className="max-w-screen-2xl container mx-auto px-4 md:px-20 my-16">
+      <div
+        name="Contact"
+        className="max-w-screen-2xl container mx-auto px-4 md:px-20 my-16"
+      >
         <h1 className="text-3xl font-bold mb-4 text-center">Contact Me</h1>
-        <div className="text-center">Please fill out the form below to contact me</div>
+        <div className="text-center">
+          Please fill out the form below to contact me
+        </div>
         <div className="flex flex-col items-center justify-center mt-5">
           <form
             onSubmit={handleSubmit(onSubmit)}
@@ -46,7 +51,9 @@ function Contact() {
                 type="text"
                 placeholder="Enter your fullname"
               />
-              {errors.name && <span className="text-red-500">This field is required</span>}
+              {errors.name && (
+                <span className="text-red-500">This field is required</span>
+              )}
             </div>
             <div className="flex flex-col mb-4">
               <label className="block text-gray-700" htmlFor="email">
@@ -59,7 +66,9 @@ function Contact() {
                 type="email"
                 placeholder="Enter your email address"
               />
-              {errors.email && <span className="text-red-500">This field is required</span>}
+              {errors.email && (
+                <span className="text-red-500">This field is required</span>
+              )}
             </div>
             <div className="flex flex-col mb-4">
               <label className="block text-gray-700" htmlFor="message">
@@ -71,7 +80,9 @@ function Contact() {
                 id="message"
                 placeholder="Enter your query"
               />
-              {errors.message && <span className="text-red-500">This field is required</span>}
+              {errors.message && (
+                <span className="text-red-500">This field is required</span>
+              )}
             </div>
             <button
               type="submit"

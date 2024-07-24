@@ -1,5 +1,6 @@
-import java from '../../public/java.png';
-import python from '../../public/python.webp';
+import html from '../../public/html.png';
+import css from '../../public/css.jpg';
+import javascript from '../../public/javascript.png';
 import mongoDB from '../../public/mongodb.jpg';
 import express from '../../public/express.png';
 import reactjs from '../../public/reactjs.png';
@@ -9,34 +10,40 @@ function Portfolio() {
   const cardItem = [
     {
       id: 1,
+      logo: html,
+      name: 'HTML',
+    },
+    {
+      id: 2,
+      logo: css,
+      name: 'CSS',
+    },
+    {
+      id: 3,
+      logo: javascript,
+      name: 'JavaScript',
+    },
+    {
+      id: 4,
       logo: mongoDB,
       name: 'MongoDB',
     },
     {
-      id: 2,
+      id: 5,
       logo: express,
       name: 'Express',
     },
     {
-      id: 3,
+      id: 6,
       logo: reactjs,
       name: 'ReactJS',
     },
     {
-      id: 4,
+      id: 7,
       logo: nodejs,
       name: 'NodeJS',
-    },
-    {
-      id: 5,
-      logo: python,
-      name: 'Python',
-    },
-    {
-      id: 6,
-      logo: java,
-      name: 'Java',
-    },
+    }
+   
   ];
 
   return (

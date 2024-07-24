@@ -1,10 +1,11 @@
 import html from '../../public/html.png';
 import css from '../../public/css.jpg';
-import java from '../../public/java.png';
 import javascript from '../../public/javascript.png';
-import oracle from '../../public/oracle.png';
-import spring from '../../public/spring.png';
-import springBoot from '../../public/springBoot.jpg';
+import mongoDB from '../../public/mongodb.jpg';
+import express from '../../public/express.png';
+import reactjs from '../../public/reactjs.png';
+import nodejs from '../../public/node.png';
+
 
 function Experience() {
   const cardItem = [
@@ -20,36 +21,38 @@ function Experience() {
       name: 'CSS',
       link: '/css',
     },
+  
     {
       id: 3,
-      logo: java,
-      name: 'Java',
-      link: '/java',
-    },
-    {
-      id: 4,
       logo: javascript,
       name: 'JavaScript',
       link: '/javascript',
     },
     {
+      id: 4,
+      logo: mongoDB,
+      name: 'MongoDB',
+      link: '/mongo',
+    },
+    {
       id: 5,
-      logo: oracle,
-      name: 'Oracle',
-      link: '/oracle',
+      logo: express,
+      name: 'Express JS',
+      link: '/express',
     },
     {
       id: 6,
-      logo: spring,
-      name: 'Spring',
-      link: '/spring',
+      logo: reactjs,
+      name: 'React',
+      link: '/javascript',
     },
     {
       id: 7,
-      logo: springBoot,
-      name: 'Spring Boot',
-      link: '/spring-boot',
+      logo: nodejs,
+      name: 'Node JS',
+      link: '/node',
     },
+
   ];
 
   return (
