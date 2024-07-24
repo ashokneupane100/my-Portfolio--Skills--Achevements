@@ -1,20 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Grid Examples</title>
-  <link rel="stylesheet" href="./teaching.css"/>
-</head>
-<body>
-  <div class="grid-container">
-    <div class="grid-item grid-item-1">1</div>
-    <div class="grid-item grid-item-2">2</div>
-    <div class="grid-item grid-item-3">3</div>
-    <div class="grid-item grid-item-4">4</div>
-    <div class="grid-item grid-item-5">5</div>
-    <div class="grid-item grid-item-6">6</div>
-  </div>
-  
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+      }
+      body {
+        background-color: rgb(60, 61, 60);
+      }
+
+      .bx {
+        width: 450px;
+        display: flex;
+        border: 1px solid black;
+        gap:10px;
+        justify-content: space-evenly;
+      }
+
+      .bx1 {
+        background-color: blue;
+      }
+      .bx2 {
+        background-color: red;
+      }
+      .bx3 {
+        background-color: green;
+      }
+      .bx4 {
+        background-color: purple;
+      }
+      .bx5 {
+        background-color: brown;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="bx">
+      <div class="bx1 item">
+        <h1>bx1</h1>
+      </div>
+      <div class="bx2 item">
+        <h1>bx2</h1>
+      </div>
+      <div class="bx3 item">
+        <h1>bx3</h1>
+      </div>
+      <div class="bx4 item">
+        <h1>bx4</h1>
+      </div>
+      <div class="bx5 item">
+        <h1>bx5</h1>
+      </div>
+    </div>
+  </body>
 </html>

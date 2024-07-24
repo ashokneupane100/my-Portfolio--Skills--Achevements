@@ -8,52 +8,23 @@ import nodejs from '../../public/node.png';
 
 function Portfolio() {
   const cardItem = [
-    {
-      id: 1,
-      logo: html,
-      name: 'HTML',
-    },
-    {
-      id: 2,
-      logo: css,
-      name: 'CSS',
-    },
-    {
-      id: 3,
-      logo: javascript,
-      name: 'JavaScript',
-    },
-    {
-      id: 4,
-      logo: mongoDB,
-      name: 'MongoDB',
-    },
-    {
-      id: 5,
-      logo: express,
-      name: 'Express',
-    },
-    {
-      id: 6,
-      logo: reactjs,
-      name: 'ReactJS',
-    },
-    {
-      id: 7,
-      logo: nodejs,
-      name: 'NodeJS',
-    }
-   
+    { id: 1, logo: html, name: 'HTML' },
+    { id: 2, logo: css, name: 'CSS' },
+    { id: 3, logo: javascript, name: 'JavaScript' },
+    { id: 4, logo: mongoDB, name: 'MongoDB' },
+    { id: 5, logo: express, name: 'Express' },
+    { id: 6, logo: reactjs, name: 'ReactJS' },
+    { id: 7, logo: nodejs, name: 'NodeJS' }
   ];
 
   return (
-    <div name="Portfolio" className="max-w-screen-2xl container mx-auto px-4 py-10 md:px-20 my-20">
-      <div className="max-w-screen-2xl mx-auto px-4 md:px-20">
+    <div name="Portfolio" className="w-full h-full px-4 py-10 mt-5 md:px-10 md:py-16 bg-gray-100">
+      <div className="w-full max-w-screen-xl mx-auto">
         <h1 className="text-4xl font-bold text-center mb-8">Portfolio</h1>
         <div className="text-center mb-8">
-          <div className="underline font-semibold">Featured Projects</div>
+          <div className="underline font-semibold text-lg">Featured Projects</div>
         </div>
-        <div className="grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center">
+        <div className="grid gap-8 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 justify-center">
           {cardItem.map(({ id, logo, name }) => (
             <div
               key={id}
@@ -62,15 +33,15 @@ function Portfolio() {
               <img
                 src={logo}
                 alt={name}
-                className="w-40 h-40 object-cover rounded-full mt-4"
+                className="w-32 h-32 object-cover rounded-full mt-4"
               />
-              <div className="p-6 text-center">
-                <h2 className="text-xl font-bold mb-2">{name}</h2>
-                <p className="text-gray-700 mb-4">
+              <div className="p-4 text-center">
+                <h2 className="text-lg font-bold mb-2">{name}</h2>
+                <p className="text-gray-700 mb-4 text-sm">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Fugiat aliquid minus natus.
                 </p>
-                <div className="flex justify-center space-x-4">
+                <div className="flex flex-wrap justify-center space-x-4 space-y-2">
                   <button className="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded">
                     Video
                   </button>
