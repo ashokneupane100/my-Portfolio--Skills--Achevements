@@ -6,31 +6,27 @@ import Experience from "./components/Experience";
 import Footer from "./components/Footer";
 import Contact from "./components/Contact";
 import { Toaster } from "react-hot-toast";
-import Css from "./pages/Css.jsx";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-
-function Layout() {
-  return (
-    <>
-      <Toaster />
-      <Navbar />
-      <Home />
-      <About />
-      <Portfolio />
-      <Experience />
-      <Contact />
-      <Footer />
-    </>
-  );
-}
+import CssMain from "./pages/css/CssMain";
 
 function App() {
   return (
     <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Layout />} />
-        <Route path="/css" element={<Css />} />
-      </Routes>
+      <Toaster />
+      <div className="flex flex-col min-h-screen">
+        <Navbar />
+        <main className="flex-grow">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/portfolio" element={<Portfolio />} />
+            <Route path="/experience" element={<Experience />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/css" element={<CssMain />} />
+          </Routes>
+        </main>
+        <Footer />
+      </div>
     </BrowserRouter>
   );
 }

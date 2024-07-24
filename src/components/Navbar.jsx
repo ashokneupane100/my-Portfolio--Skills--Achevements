@@ -1,8 +1,8 @@
 import { useState } from "react";
-import pic from "../../public/photo.avif";
+import pic from "../../public/code.png";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoMdCloseCircleOutline } from "react-icons/io";
-import{Link} from 'react-scroll';
+import{Link} from 'react-router-dom';
 
 function Navbar() {
   const [menu, setMenu] = useState(false);
@@ -10,26 +10,31 @@ function Navbar() {
     {
       id: 1,
       text: "Home",
+      url:"/"
     },
 
     {
       id: 2,
       text: "About",
+      url:"/about"
     },
 
     {
       id: 3,
       text: "Portfolio",
+      url:"/portfolio"
     },
 
     {
       id: 4,
       text: "Experience",
+      url:"/experience"
     },
 
     {
       id: 5,
       text: "Contact",
+      url:"/contact"
     },
   ];
 
@@ -50,17 +55,12 @@ function Navbar() {
           <div>
             {/* Desktop nav bar */}
             <ul className="hidden md:flex space-x-8">
-              {navItems.map(({ id, text }) => (
+              {navItems.map(({ id, text,url }) => (
                 <li
                   className="hover:scale-105 duration-200 cursor-pointer"
                   key={id}
                 >
-                  <Link to={text}
-                  smooth={true}
-                  
-                  duration={500}
-                  offset={-70}
-                  activeClass="active">
+                  <Link to={url}>
                   {text}</Link>
 
                 </li>
@@ -71,29 +71,28 @@ function Navbar() {
               {menu ? (
                 <IoMdCloseCircleOutline size={30} />
               ) : (
-                <GiHamburgerMenu size={30} />
+                <GiHamburgerMenu size={30} className="cursor-pointer" />
               )}
             </div>
           </div>
         </div>
 
-        {/* mobile nav bar */}
-
-        {menu && (
+       {/* mobile navbar */}
+       {menu && (
           <div className="bg-white">
-            <ul className="md:hidden flex flex-col h-screen items-center justify-center space-y-4 text-xl">
-              {navItems.map(({ id, text }) => (
+            <ul className="md:hidden flex flex-col h-screen items-center justify-center space-y-3 text-xl">
+              {navItems.map(({ id, text,url }) => (
                 <li
-                  className="hover:scale-105 duration-200 font-semibold cursor-pointer space-y-3"
+                  className="hover:scale-105 duration-200 font-semibold cursor-pointer"
                   key={id}
                 >
-                  <Link onClick={() => setMenu(!menu)} to={text}
-                  smooth={true}
-                  
-                  duration={500}
-                  offset={-70}
-                  activeClass="active">
-                  {text}</Link>
+                  <Link
+                    onClick={() => setMenu(!menu)}
+                    to={url}
+                    
+                  >
+                    {text}
+                  </Link>
                 </li>
               ))}
             </ul>

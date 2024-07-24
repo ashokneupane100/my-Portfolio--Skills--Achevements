@@ -47,7 +47,7 @@ function Portfolio() {
   ];
 
   return (
-    <div name="Portfolio" className="bg-gray-100 py-12">
+    <div name="Portfolio" className="max-w-screen-2xl container mx-auto px-4 py-10 md:px-20 my-20">
       <div className="max-w-screen-2xl mx-auto px-4 md:px-20">
         <h1 className="text-4xl font-bold text-center mb-8">Portfolio</h1>
         <div className="text-center mb-8">
