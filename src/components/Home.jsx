@@ -1,79 +1,100 @@
-import {
-  FaFacebookSquare,
-  FaLinkedin,
-  FaTelegram,
-  FaYoutube,
-} from "react-icons/fa";
-import { DiMongodb } from "react-icons/di";
-import { SiExpress } from "react-icons/si";
-import { FaReact, FaNodeJs } from "react-icons/fa";
+import pic from "../../public/photo.avif";
 
-const Home = () => {
+import { FaSquareFacebook } from "react-icons/fa6";
+import { FaLinkedin } from "react-icons/fa";
+import { IoLogoYoutube } from "react-icons/io";
+import { FaTelegram } from "react-icons/fa6";
+
+import { SiMongodb } from "react-icons/si";
+import { SiExpress } from "react-icons/si";
+import { FaReact } from "react-icons/fa";
+import { FaNodeJs } from "react-icons/fa6";
+
+import { ReactTyped } from "react-typed";
+
+function Home() {
   return (
     <>
-      <div name="Home" className="max-w-screen-2xl container mx-auto px-4 md:px-20 my-20">
-        <div className="flex flex-col items-center">
-          <div className="w-full sm:mt-12 md:mt-24 text-center">
-            <span className="text-xl text-gray-600">Welcome to my feed.</span>
-            <div className="flex justify-center items-center space-x-2 text-2xl md:text-4xl mt-2">
-              <h1 className="font-bold">Hello, I am a</h1>
-              <span className="text-red-700 font-bold">Developer</span>
+      <div
+        name="Home"
+        className="max-w-screen-2xl container mx-auto px-4 md:px-20 my-28"
+      >
+        <div className="flex flex-col md:flex-row">
+          <div className="md:w-1/2 mt-12 md:mt-24 space-y-2 order-2 md:order-1">
+            <span className="text-xl">Welcome to My Feed</span>
+            <div className="flex flex-wrap space-x-1 text-2xl md:text-4xl">
+              <div>
+              <h1>Hello, I am a</h1>
+              </div>
+              {/* <span >Developer</span> */}
+              <ReactTyped
+                className="text-red-700 font-bold"
+                strings={["Full Stack Developer", "Programmer", "Coder","JavaScript Lover"]}
+                typeSpeed={40}
+                backSpeed={50}
+                loop={true}
+              />
             </div>
-
-            <p className="text-sm md:text-md text-justify text-gray-700 mt-4 mx-auto max-w-2xl">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
-              dolor aut itaque eligendi laborum ea? Magnam, impedit unde. Est
-              expedita iure aut laboriosam debitis necessitatibus similique
-              eligendi numquam nostrum beatae.
+            <br />
+            <p className="text-sm md:text-md text-justify">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Quisquam, recusandae consequatur. Accusamus sint libero eligendi
+              laborum fuga repudiandae? Asperiores tempore eos animi dolores
+              corrupti! Sint quos, mollitia architecto aliquam nesciunt, optio
+              cum delectus sit voluptatum aut ratione quaerat veniam aperiam!
             </p>
-
-            {/* Social Media icons */}
-            <div className="flex flex-col md:flex-row justify-center items-center mt-8 space-y-6 md:space-y-0 md:space-x-12">
-              <div className="space-y-2 text-center">
-                <h1 className="font-bold text-xl">Available on:</h1>
-                <ul className="flex space-x-5 justify-center">
+            <br />
+            {/* social media icons */}
+            <div className="flex flex-col items-center md:flex-row justify-between space-y-6 md:space-y-0">
+              <div className="  space-y-2">
+                <h1 className="font-bold text-center ">Available on</h1>
+                <ul className="flex space-x-5">
                   <li>
                     <a href="https://www.facebook.com/" target="_blank">
-                      <FaFacebookSquare className="text-3xl cursor-pointer hover:text-blue-600" />
+                      <FaSquareFacebook className="text-2xl cursor-pointer" />
                     </a>
                   </li>
-
                   <li>
                     <a href="https://www.linkedin.com/" target="_blank">
-                      <FaLinkedin className="text-3xl cursor-pointer hover:text-blue-600" />
+                      <FaLinkedin className="text-2xl cursor-pointer" />
                     </a>
                   </li>
                   <li>
                     <a href="https://www.youtube.com/" target="_blank">
-                      <FaYoutube className="text-3xl cursor-pointer hover:text-red-600" />
+                      <IoLogoYoutube className="text-2xl cursor-pointer" />
                     </a>
                   </li>
                   <li>
-                    <a href="https://telegram.org/" target="_blank">
-                      <FaTelegram className="text-3xl cursor-pointer hover:text-blue-600" />
+                    <a href="https://t.me/" target="_blank">
+                      <FaTelegram className="text-2xl cursor-pointer" />
                     </a>
                   </li>
                 </ul>
               </div>
-              <div className="space-y-2 text-center">
-                <h1 className="font-bold text-xl">Currently Working on:</h1>
-                <div className="flex space-x-5 justify-center">
-                  <DiMongodb className="text-3xl hover:scale-110 duration-200 cursor-pointer" />
-                  <SiExpress className="text-3xl hover:scale-110 duration-200 cursor-pointer" />
-                  <FaReact className="text-3xl hover:scale-110 duration-200 cursor-pointer" />
-                  <FaNodeJs className="text-3xl hover:scale-110 duration-200 cursor-pointer" />
+              <div className=" space-y-2">
+                <h1 className="font-bold text-center">Currently working on</h1>
+                <div className="flex space-x-5">
+                  <SiMongodb className="text-2xl md:text-3xl hover:scale-110 duration-200 rounded-full border-[2px] cursor-pointer" />
+                  <SiExpress className="text-2xl md:text-3xl hover:scale-110 duration-200 rounded-full border-[2px] cursor-pointer" />
+                  <FaReact className="text-2xl md:text-3xl hover:scale-110 duration-200 rounded-full border-[2px] cursor-pointer" />
+                  <FaNodeJs className="text-2xl md:text-3xl hover:scale-110 duration-200 rounded-full border-[2px] cursor-pointer" />
                 </div>
               </div>
             </div>
           </div>
-          <div className="md:w-1/2 mt-12 md:mt-0">
-            {/* Add additional content here if needed */}
+          <div className="md:w-1/2 md:ml-48 md:mt-20 mt-8 order-1">
+            <img
+              src={pic}
+              className="rounded-full md:w-[450px] md:h-[450px]"
+              alt=""
+            />
           </div>
         </div>
       </div>
-      <hr className="border-gray-300 mt-8" />
+
+      <hr />
     </>
   );
-};
+}
 
 export default Home;
