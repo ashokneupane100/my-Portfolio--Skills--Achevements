@@ -6,8 +6,10 @@ import Experience from "./components/Experience";
 import Footer from "./components/Footer";
 import Contact from "./components/Contact";
 import { Toaster } from "react-hot-toast";
+import Css from "./pages/Css.jsx";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-function App() {
+function Layout() {
   return (
     <>
       <Toaster />
@@ -19,6 +21,17 @@ function App() {
       <Contact />
       <Footer />
     </>
+  );
+}
+
+function App() {
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Layout />} />
+        <Route path="/css" element={<Css />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 

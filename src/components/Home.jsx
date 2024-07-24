@@ -21,27 +21,23 @@ function Home() {
       >
         <div className="flex flex-col md:flex-row">
           <div className="md:w-1/2 mt-12 md:mt-24 space-y-2 order-2 md:order-1">
-            <span className="text-xl">Welcome to My Feed</span>
+            <span className="text-xl font-bold text-center">Welcome to My Feed</span>
             <div className="flex flex-wrap space-x-1 text-2xl md:text-4xl">
               <div>
               <h1>Hello, I am a</h1>
               </div>
               {/* <span >Developer</span> */}
               <ReactTyped
-                className="text-red-700 font-bold"
-                strings={["Full Stack Developer", "Programmer", "Coder","JavaScript Lover"]}
+                className="text-blue-800 font-bold"
+                strings={["Full Stack Developer", "Programmer", "Coder","JavaScript Lover !"]}
                 typeSpeed={40}
                 backSpeed={50}
                 loop={true}
               />
             </div>
             <br />
-            <p className="text-sm md:text-md text-justify">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Quisquam, recusandae consequatur. Accusamus sint libero eligendi
-              laborum fuga repudiandae? Asperiores tempore eos animi dolores
-              corrupti! Sint quos, mollitia architecto aliquam nesciunt, optio
-              cum delectus sit voluptatum aut ratione quaerat veniam aperiam!
+            <p className="text-xl md:text-xl text-justify">
+             Hello I am Ashok Neupane; Welcome to my portfolio page ! As the journey of skill-building never ends, this portfolio will continually evolve and expand. Stay tuned for updates...
             </p>
             <br />
             {/* social media icons */}
