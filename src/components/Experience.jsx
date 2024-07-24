@@ -29,7 +29,7 @@ function Experience() {
           Experience and Continuous Learning
         </h1>
         <p className="text-center text-xl mb-8">
-          I have more than 2 years of experience in these technologies and I
+          I am a self learned Programmer and I have a passion on programming and I
           have been continuously updating on these technologies; click on each
           section to see what I have been doing with these skills.
         </p>

@@ -21,9 +21,9 @@ function CssMain() {
           Learned CSS By Days:
         </h1>
         <p className="text-center text-xl text-gray-800 mb-8">
-          I have more than 2 years of experience in these technologies and I
+         CSS also known as cascading style sheet is the core technology of world wide web; I
           have been continuously updating on these technologies; click on each
-          section to see what I have been doing with these skills.
+          section to see what I have been getting and doing with these skills.
         </p>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-7">
           {cardItem.map(({ id, logo, name, link }) => (
