@@ -8,11 +8,17 @@ const CssOne = () => {
       <div>
         <h1 className='text-center mb-10'>Here in this first day; we learned about how to do with css flex properties: css flex is the excellent way to arrange the things as below: the source code for this page is on this link: </h1>
 
-      <Link target='_blank' className='flex align-center justify-center' to="/your-target-path">
-      <button className='flex bg-green-900 text-white p-6 w-1/2 rounded-lg mb-4 text-2xl'>
-        Click here to find the code of this component:
-      </button>
-         </Link>
+        <Link
+  to="https://github.com/ashokneupane100/my-Portfolio--Skills--Achevements/blob/b00e42cbbcbe9774fa5a2ad26c132ab7d27c7542/src/pages/css/CssOne.jsx"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="flex align-center justify-center"
+>
+  <button className="flex bg-green-900 text-white p-6 w-1/2 rounded-lg mb-4 text-2xl">
+    Click here to find the code of this component:
+  </button>
+</Link>
+
 
 
         <div className={styles.header}>
