@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Gallery</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(to right, #1c1c1c, #4d4d4d);
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .heading {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+
+        .subheading {
+            font-size: 1.5rem;
+            margin-bottom: 30px;
+            color: #ddd;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            grid-template-rows: repeat(auto-fill, minmax(300px, 1fr)); /* Rows should be flexible */
+            gap: 15px;
+            max-height: 600px; /* Adjust to fit your design */
+            overflow: hidden; /* Hide overflow if needed */
+        }
+
+        .box {
+            position: relative;
+            background-size: cover;
+            background-position: center;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .box::before {
+            content: "";
+            display: block;
+            padding-top: 75%; /* Aspect ratio of 4:3 */
+        }
+
+        .box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+        }
+
+        .box .label {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            background: rgba(0, 0, 0, 0.6);
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 1.2rem;
+        }
+
+        .waterfall {
+            grid-row: span 2; /* Make "Waterfall" span across two rows */
+        }
+
+        @media screen and (max-width: 600px) {
+            .heading {
+                font-size: 2.5rem;
+            }
+
+            .subheading {
+                font-size: 1.2rem;
+            }
+
+            .gallery {
+                grid-template-rows: repeat(auto-fill, minmax(200px, 1fr)); /* Adjust for smaller screens */
+                grid-template-columns: 1fr; /* Single column layout for mobile */
+            }
+
+            .waterfall {
+                grid-row: span 1; /* Ensure "Waterfall" takes one row on mobile */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2 class="heading">Travel Gallery</h2>
+        <p class="subheading">Explore the beauty of nature through our curated photo collection.</p>
+        <div class="gallery">
+            <div class="box" style="background-image: url('https://media.istockphoto.com/id/1534040386/photo/an-outdoor-bamboo-gazebo-nestled-amidst-lush-greenery-offering-serene-relaxation-after-a.jpg?s=612x612&w=is&k=20&c=n88EuI6e8Hcc2XIioQNoZsIquNJQ12c_LWxo3JlzzAw=');">
+                <div class="label">Resort</div>
+            </div>
+            <div class="box" style="background-image: url('https://plus.unsplash.com/premium_photo-1673292293042-cafd9c8a3ab3?q=80&w=1287&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');">
+                <div class="label">Jungle</div>
+            </div>
+            <div class="box waterfall" style="background-image: url('https://images.unsplash.com/photo-1433086966358-54859d0ed716?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bmF0dXJlfGVufDB8fDB8fHww');">
+                <div class="label">Waterfall</div>
+            </div>
+            <div class="box" style="background-image: url('https://images.unsplash.com/photo-1472214103451-9374bd1c798e?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');">
+                <div class="label">Jungle</div>
+            </div>
+            <div class="box" style="background-image: url('https://media.istockphoto.com/id/136917788/photo/xl-migrating-canada-geese.jpg?s=612x612&w=is&k=20&c=mHNW0uHCFpVexxy-7OINfkWAntn5H7J_2qzJJFlh1_0=');">
+                <div class="label">Birds Flying</div>
+            </div>
+            <div class="box" style="background-image: url('https://images.unsplash.com/photo-1500673922987-e212871fec22?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');">
+                <div class="label">Jungle Road</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

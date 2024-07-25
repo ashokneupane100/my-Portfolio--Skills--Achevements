@@ -9,6 +9,15 @@ function CssMain() {
       name: "CSS Day 1",
       link: "/cssone",
     },
+
+    {
+      id: 1,
+      logo: css,
+      name: "CSS Day 2",
+      link: "/csstwo",
+    },
+
+
   ];
 
   return (

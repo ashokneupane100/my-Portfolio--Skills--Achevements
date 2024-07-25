@@ -15,7 +15,7 @@ function Home() {
       >
         <div className="flex flex-col md:flex-row gap-8 md:gap-16">
           {/* Left Section */}
-          <div className="flex flex-col md:w-1/2 mt-12 md:mt-24 space-y-4 order-2 md:order-1">
+          <div className="flex flex-col md:w-1/2 mt-12 md:mt-24 space-y-4 order-1 md:order-1">
             <span className="text-xl font-bold text-center">
               Welcome to My Feed
             </span>
@@ -51,13 +51,12 @@ function Home() {
           </div>
 
           {/* Right Section */}
-          <div className="flex flex-col items-center md:w-1/2 mt-8 md:mt-20 order-1">
-          <img
-  src={pic}
-  className="rounded-full w-[300px] md:w-[400px] lg:w-[500px] mx-auto transition-transform duration-300 hover:scale-110 hover:shadow-lg"
-  alt="Programmer"
-/>
-
+          <div className="flex flex-col items-center md:w-1/2 mt-8 md:mt-20 order-2 md:order-2">
+            <img
+              src={pic}
+              className="rounded-full w-[300px] md:w-[400px] lg:w-[500px] mx-auto transition-transform duration-300 hover:scale-110 hover:shadow-lg"
+              alt="Programmer"
+            />
             <div className="space-y-6 mt-8 text-center">
               <h1 className="font-bold text-xl md:text-2xl lg:text-3xl">Currently working on</h1>
               <div className="flex flex-wrap justify-center text-3xl md:text-4xl lg:text-6xl gap-4">
@@ -77,3 +76,4 @@ function Home() {
 }
 
 export default Home;
+

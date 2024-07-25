@@ -1,11 +1,22 @@
 // CssOne.jsx
 import styles from './CssOne.module.css';
+import {Link} from 'react-router-dom';
 
 const CssOne = () => {
   return (
-    <div className="max-w-screen-2xl mx-auto px-4 mt-36 md:px-20">
+    <div className="max-w-screen-2xl mx-auto px-4 mt-36 md:px-20 mb-10">
       <div>
+        <h1 className='text-center mb-10'>Here in this first day; we learned about how to do with css flex properties: css flex is the excellent way to arrange the things as below: the source code for this page is on this link: </h1>
+
+      <Link target='_blank' className='flex align-center justify-center' to="/your-target-path">
+      <button className='flex bg-green-900 text-white p-6 w-1/2 rounded-lg mb-4 text-2xl'>
+        Click here to find the code of this component:
+      </button>
+         </Link>
+
+
         <div className={styles.header}>
+          
           <h1>CSS Flexbox by Mindriser Inc</h1>
         </div>
         <div className={styles.container}>
