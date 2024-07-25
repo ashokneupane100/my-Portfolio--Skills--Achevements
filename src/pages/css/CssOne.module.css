@@ -1,0 +1,22 @@
+/* CssOne.module.css */
+.header {
+  background-color: #32055c;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #0ab8b8;
+}
+
+.box {
+  background-color: #0ab8b8;
+  padding: 20px;
+  flex: 1;
+  margin: 0 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
