@@ -25,7 +25,7 @@ function Home() {
                 <div className="w-full flex justify-center">
                   <div className="relative w-full max-w-[500px]">
                     <ReactTyped
-                      className="text-blue-800 font-bold"
+                      className="text-blue-800 font-bold text-4xl"
                       strings={[
                         "Full Stack Developer",
                         "Programmer",
@@ -77,3 +77,4 @@ function Home() {
 
 export default Home;
 
+//needs some adjustment; show your talent to make it better
