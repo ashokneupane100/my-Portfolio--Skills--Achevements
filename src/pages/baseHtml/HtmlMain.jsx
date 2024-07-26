@@ -1,90 +1,85 @@
-import css from "../../../public/css.jpg";
+import html from "../../../public/html.png";
 import { Link } from "react-router-dom";
 
-function CssMain() {
+function HtmlMain() {
   const cardItem = [
     {
       id: 1,
-      logo: css,
+      logo: html,
       name: "Day 1",
       link: "/cssone",
     },
 
     {
       id: 2,
-      logo: css,
+      logo: html,
       name: "Day 2",
       link: "/csstwo",
     },
 
     {
       id: 3,
-      logo: css,
+      logo: html,
       name: "Day 3",
       link: "/cssthree",
     },
 
     {
       id: 4,
-      logo: css,
+      logo: html,
       name: "Day 4",
       link: "/cssfour",
     },
 
     {
       id: 5,
-      logo: css,
+      logo: html,
       name: "Day 5",
       link: "/cssfive",
     },
 
     {
       id: 6,
-      logo: css,
+      logo: html,
       name: "Day 6",
       link: "/csssix",
     },
-
     {
       id: 6,
-      logo: css,
+      logo: html,
       name: "Day 6",
       link: "/csssix",
     },
-
     {
       id: 6,
-      logo: css,
+      logo: html,
       name: "Day 6",
       link: "/csssix",
     },
-
     {
       id: 6,
-      logo: css,
+      logo: html,
       name: "Day 6",
       link: "/csssix",
     },
-
     {
       id: 6,
-      logo: css,
+      logo: html,
       name: "Day 6",
       link: "/csssix",
     },
-
     {
       id: 6,
-      logo: css,
+      logo: html,
       name: "Day 6",
       link: "/csssix",
     },
-
-
-
-
-
-
+    {
+      id: 6,
+      logo: html,
+      name: "Day 6",
+      link: "/csssix",
+    },
   ];
 
   return (
@@ -97,16 +92,15 @@ function CssMain() {
           Learned CSS By Days:
         </h1>
         <p className="text-center text-xl text-gray-800 mb-8">
-         CSS also known as cascading style sheet is the core technology of world wide web; I
-          have been continuously updating on these technologies; click on each
-          section to see what I have been getting and doing with these skills.
+          CSS also known as cascading style sheet is the core technology of
+          world wide web; I have been continuously updating on these
+          technologies; click on each section to see what I have been getting
+          and doing with these skills.
         </p>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-7">
           {cardItem.map(({ id, logo, name, link }) => (
             <Link key={id} to={link}>
-              <div
-                className="flex flex-col items-center justify-center bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition duration-300 cursor-pointer hover:scale-110"
-              >
+              <div className="flex flex-col items-center justify-center bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition duration-300 cursor-pointer hover:scale-110">
                 <img
                   src={logo}
                   className="w-32 h-32 rounded-full mt-4"
@@ -124,4 +118,4 @@ function CssMain() {
   );
 }
 
-export default CssMain;
+export default HtmlMain;

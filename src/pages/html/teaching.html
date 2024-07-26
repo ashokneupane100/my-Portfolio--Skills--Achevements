@@ -1,54 +1,16 @@
-<DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sample Flexbox Example</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background-color: rgb(217, 238, 186);
-        }
-        .header {
-            background-color: #32055c;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
-        .container {
-            display: flex;
-            justify-content: space-between;
-            padding: 20px;
-            background-color: #0ab8b8;
-        }
-        .box {
-            background-color: #0ab8b8;
-            padding: 20px;
-            flex: 1;
-            margin: 0 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-       
-    </style>
-</head>
-<body>
-    <div class="header">
-        <h1>CSS Flexbox by Mindriser Inc</h1>
-    </div>
-    <div class="container">
-        <div class="box">
-            <h2>About HTML</h2>
-            <p>CSS is a great Technolgy it is the tec of www Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto quidem rerum, beatae rem natus voluptate modi velit facilis amet maiores ut eius illo, expedita mollitia corporis deserunt ratione qui ducimus.</p>
-        </div>
-        <div class="box">
-            <h2>About CSS</h2>
-            <p>CSS is Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut ipsum reprehenderit accusamus ad voluptatem beatae odio, quos, a explicabo quisquam accusantium ea non sint doloremque dignissimos mollitia perferendis vitae dolor..</p>
-        </div>
-        <div class="box">
-            <h2>Java</h2>
-            <p>Javascript Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam voluptatem totam architecto nobis voluptate at sed minus perspiciatis qui corrupti molestias, minima sunt non dignissimos quo quibusdam maxime commodi aperiam?</p>
-        </div>
-    </div>
-</body>
-</html>
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 equal columns */
+    grid-template-rows: repeat(4, 1fr); /* 4 equal rows */
+    gap: 10px; /* Gap between boxes */
+    width: 400px; /* Adjust width as needed */
+  }
+  
+  .box {
+    background-color: lightblue;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  

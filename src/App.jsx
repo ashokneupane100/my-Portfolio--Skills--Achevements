@@ -11,6 +11,8 @@ import Experience from './components/Experience';
 import Contact from './components/Contact';
 import CssMain from './pages/css/CssMain';
 import CssOne from './pages/css/CssOne';
+import HtmlMain from "./pages/baseHtml/HtmlMain"
+
 
 // Extracted Routes Component
 const AppRoutes = () => (
@@ -22,6 +24,8 @@ const AppRoutes = () => (
     <Route path="/contact" element={<Contact />} />
     <Route path="/css" element={<CssMain />} />
     <Route path="/cssone" element={<CssOne />} />
+    <Route path="/html" element={<HtmlMain />} />
+   
   </Routes>
 );
 
