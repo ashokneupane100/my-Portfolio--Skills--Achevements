@@ -21,20 +21,20 @@ function Home() {
             </span>
             <div className="flex flex-col items-center text-2xl md:text-4xl space-y-4">
               <div className="flex flex-col items-center">
-                <h1 className="whitespace-nowrap text-center">Hello, I am a</h1>
+                <h4 className="whitespace-nowrap text-center text-2xl">Hello, I am a</h4>
                 <div className="w-full flex justify-center">
                   <div className="relative w-full max-w-[500px]">
                     <ReactTyped
                       className="text-blue-800 font-bold text-4xl"
                       strings={[
-                        "Full Stack Developer",
+                        "FullStack <br> Developer",
                         "Programmer",
                         "Coder",
                         "Software Engineer",
                         "JavaScript Lover",
                       ]}
                       typeSpeed={40}
-                      backSpeed={50}
+                      backSpeed={0}
                       loop={true}
                     />
                   </div>
