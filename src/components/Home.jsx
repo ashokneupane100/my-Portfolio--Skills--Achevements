@@ -30,8 +30,8 @@ function Home() {
                         "FullStack <br> Developer",
                         "Programmer",
                         "Coder",
-                        "Software Engineer",
-                        "JavaScript Lover",
+                        "Software <br> Engineer",
+                        "JavaScript <br> Lover",
                       ]}
                       typeSpeed={40}
                       backSpeed={0}
