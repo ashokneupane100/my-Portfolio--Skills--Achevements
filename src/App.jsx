@@ -12,6 +12,7 @@ import Contact from './components/Contact';
 import CssMain from './pages/css/CssMain';
 import CssOne from './pages/css/CssOne';
 import HtmlMain from "./pages/baseHtml/HtmlMain"
+import CssGrid from './pages/css/CssGrid';
 
 
 // Extracted Routes Component
@@ -25,6 +26,7 @@ const AppRoutes = () => (
     <Route path="/css" element={<CssMain />} />
     <Route path="/cssone" element={<CssOne />} />
     <Route path="/html" element={<HtmlMain />} />
+    <Route path="/csstwo" element={<CssGrid />} />
    
   </Routes>
 );
