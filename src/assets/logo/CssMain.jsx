@@ -1,4 +1,5 @@
-import css from "../../../public/css.jpg";
+import css from "../assets/css.jpg";
+
 import { Link } from "react-router-dom";
 
 function CssMain() {
@@ -27,14 +28,14 @@ function CssMain() {
     {
       id: 4,
       logo: css,
-      name: "Day 4",
+      name: "Photos Grid",
       link: "/cssfour",
     },
 
     {
       id: 5,
       logo: css,
-      name: "Css Lists Icons",
+      name: "5. List and Styles",
       link: "/cssfive",
     },
     {
