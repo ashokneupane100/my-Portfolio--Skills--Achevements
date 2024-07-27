@@ -37,7 +37,6 @@ function CssMain() {
       name: "Day 5",
       link: "/cssfive",
     },
-
     {
       id: 6,
       logo: css,
@@ -45,39 +44,47 @@ function CssMain() {
       link: "/csssix",
     },
 
+
     {
-      id: 6,
+      id: 7,
       logo: css,
-      name: "Day 6",
-      link: "/csssix",
+      name: "Day 7",
+      link: "/cssseven",
     },
 
     {
-      id: 6,
+      id: 8,
       logo: css,
-      name: "Day 6",
-      link: "/csssix",
+      name: "Day 8",
+      link: "/csseight",
     },
 
     {
-      id: 6,
+      id: 9,
       logo: css,
-      name: "Day 6",
-      link: "/csssix",
+      name: "Day 9",
+      link: "/cssnine",
     },
 
     {
-      id: 6,
+      id: 10,
       logo: css,
-      name: "Day 6",
-      link: "/csssix",
+      name: "Day 10",
+      link: "/cssten",
     },
 
     {
-      id: 6,
+      id: 11,
       logo: css,
-      name: "Day 6",
-      link: "/csssix",
+      name: "Day 11",
+      link: "/csseleven",
+    },
+
+    {
+      id: 12,
+      logo: css,
+      name: "Day 12",
+      link: "/csstwelve",
     },
 
 

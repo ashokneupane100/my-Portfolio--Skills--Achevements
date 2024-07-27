@@ -14,6 +14,7 @@ import CssOne from './pages/css/CssOne';
 import HtmlMain from "./pages/baseHtml/HtmlMain"
 import CssGrid from './pages/css/CssGrid';
 import CssThree from './pages/css/CssThree';
+import CssFour from './pages/css/CssFour';
 
 
 // Extracted Routes Component
@@ -29,6 +30,7 @@ const AppRoutes = () => (
     <Route path="/html" element={<HtmlMain />} />
     <Route path="/csstwo" element={<CssGrid />} />
     <Route path="/cssthree" element={<CssThree />} />
+    <Route path="/cssfour" element={<CssFour />} />
    
   </Routes>
 );
