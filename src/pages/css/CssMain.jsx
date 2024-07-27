@@ -34,7 +34,7 @@ function CssMain() {
     {
       id: 5,
       logo: css,
-      name: "Css Lists Icons",
+      name: "5. CSS Lists and Icons",
       link: "/cssfive",
     },
     {
@@ -108,7 +108,7 @@ function CssMain() {
           have been continuously updating on these technologies; click on each
           section to see what I have been getting and doing with these skills.
         </p>
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-7">
+        <div className="grid grid-cols-1 md:grid-cols-2  gap-7">
           {cardItem.map(({ id, logo, name, link }) => (
             <Link key={id} to={link}>
               <div

@@ -97,7 +97,7 @@ function HtmlMain() {
           technologies; click on each section to see what I have been getting
           and doing with these skills.
         </p>
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-7">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-7">
           {cardItem.map(({ id, logo, name, link }) => (
             <Link key={id} to={link}>
               <div className="flex flex-col items-center justify-center bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition duration-300 cursor-pointer hover:scale-110">

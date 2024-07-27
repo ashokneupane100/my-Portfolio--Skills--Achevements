@@ -24,7 +24,7 @@ function Portfolio() {
         <div className="text-center mb-8">
           <div className="underline font-semibold text-lg">Featured Projects</div>
         </div>
-        <div className="grid gap-8 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 justify-center">
+        <div className="grid gap-8 grid-cols-1  md:grid-cols-2 justify-center">
           {cardItem.map(({ id, logo, name }) => (
             <div
               key={id}
