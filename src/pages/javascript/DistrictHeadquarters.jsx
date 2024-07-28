@@ -84,46 +84,18 @@ const districts = [
 const DistrictHeadquarters = () => {
   const [text, setText] = useState("");
   const [districtIndex, setDistrictIndex] = useState(0);
-  const [characterIndex, setCharacterIndex] = useState(0);
-  const [isPaused, setIsPaused] = useState(false);
 
   useEffect(() => {
-    if (isPaused) {
-      const pauseTimeout = setTimeout(() => {
-        setIsPaused(false);
-        setText("");
-      }, 2000);
-      return () => clearTimeout(pauseTimeout);
-    } else {
-      const characterInterval = setInterval(() => {
-        const currentDistrict = districts[districtIndex];
-        const fullText = `District: ${currentDistrict.district} <br> Headquarter: ${currentDistrict.headquarters}.`;
+    const interval = setInterval(() => {
+      const currentDistrict = districts[districtIndex];
+      const fullText = `District: ${currentDistrict.district} <br> Headquarter: ${currentDistrict.headquarters}.`;
+      setText(fullText);
 
-        setText((prevText) => prevText + (fullText[characterIndex] || ""));
+      setDistrictIndex((prevIndex) => (prevIndex + 1) % districts.length);
+    }, 2000); // Display each district for 5 seconds
 
-        if (characterIndex >= fullText.length - 1) {
-          setCharacterIndex(0);
-          setIsPaused(true);
-        } else {
-          setCharacterIndex((prevIndex) => prevIndex + 1);
-        }
-      }, 100); // Faster character display
-
-      return () => clearInterval(characterInterval);
-    }
-  }, [characterIndex, districtIndex, isPaused]);
-
-  useEffect(() => {
-    if (!isPaused) {
-      const districtInterval = setInterval(() => {
-        setDistrictIndex((prevIndex) => (prevIndex + 1) % districts.length);
-        setText("");
-        setCharacterIndex(0);
-      }, 5000); // Total time before switching to next district
-
-      return () => clearInterval(districtInterval);
-    }
-  }, [isPaused]);
+    return () => clearInterval(interval);
+  }, [districtIndex]);
 
   return (
     <div className="mt-20 mb-36">
