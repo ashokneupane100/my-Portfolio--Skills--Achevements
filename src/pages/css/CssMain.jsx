@@ -2,6 +2,7 @@ import css from "../../../public/css.jpg";
 import { Link } from "react-router-dom";
 
 function CssMain() {
+  window.scrollTo(0, 0);
   const cardItem = [
     {
       id: 1,

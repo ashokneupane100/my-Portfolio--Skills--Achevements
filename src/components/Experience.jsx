@@ -8,6 +8,7 @@ import nodejs from "../../public/node.png";
 import github from "../../public/git1112.png";
 
 function Experience() {
+  window.scrollTo(0, 0);
   const cardItem = [
     { id: 1, logo: html, name: "HTML", link: "/html" },
     { id: 2, logo: css, name: "CSS", link: "/css" },

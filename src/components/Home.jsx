@@ -7,6 +7,7 @@ import Experience from "./Experience";
 import { ReactTyped } from "react-typed";
 
 function Home() {
+  window.scrollTo(0, 0);
   return (
     <>
       <div

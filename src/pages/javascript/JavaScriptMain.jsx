@@ -2,6 +2,7 @@ import js from "../../../public/javascript.png";
 import { Link } from "react-router-dom";
 
 function JavaScriptMain() {
+  window.scrollTo(0, 0);
   const cardItem = [
     {
       id: 1,
