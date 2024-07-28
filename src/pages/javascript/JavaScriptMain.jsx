@@ -14,7 +14,7 @@ function JavaScriptMain() {
     {
       id: 2,
       logo: js,
-      name: "Day 2",
+      name: "2.District Headquarters",
       link: "/jstwo",
     },
 

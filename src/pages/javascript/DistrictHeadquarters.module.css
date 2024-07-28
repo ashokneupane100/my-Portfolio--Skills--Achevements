@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Roboto:ital,wght@0,400;1,900&display=swap");
+
+.autoTextAnimation {
+  margin: 4em;
+  text-align: center;
+}
+
+.district {
+  font-size: 2em;
+  text-decoration: underline;
+  color: green;
+  font-weight: bolder;
+}
+
+.container{
+    margin-bottom: 2rem;
+}
+
+.container h1 {
+  font-size: 1.8em;
+}
+
+@media (max-width: 768px) {
+  .autoTextAnimation {
+    font-size: 1.2em;
+  }
+
+  .district {
+    font-size: 1.5em;
+  }
+
+  .container h1 {
+    font-size: 1.4em;
+  }
+}
+
+@media (max-width: 480px) {
+  .autoTextAnimation {
+    font-size: 1.4em;
+  }
+
+  .district {
+    font-size: 1.2em;
+  }
+
+  .container h1 {
+    font-size: 1.2em;
+  }
+}
