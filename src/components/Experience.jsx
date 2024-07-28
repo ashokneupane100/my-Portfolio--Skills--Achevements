@@ -5,7 +5,7 @@ import mongoDB from "../../public/mongodb.jpg";
 import express from "../../public/express.png";
 import reactjs from "../../public/reactjs.png";
 import nodejs from "../../public/node.png";
-import github from "../../public/github.png";
+import github from "../../public/git1112.png";
 
 function Experience() {
   const cardItem = [
@@ -37,7 +37,7 @@ function Experience() {
           {cardItem.map(({ id, logo, name, link }) => (
             <div
               key={id}
-              className="flex flex-col items-center justify-center bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition duration-300 cursor-pointer hover:scale-105"
+              className="flex flex-col items-center justify-center bg-black text-gray-200 rounded-lg overflow-hidden shadow-md hover:shadow-xl transition duration-300 cursor-pointer hover:scale-105"
               onClick={() => (window.location.href = link)}
             >
               <img

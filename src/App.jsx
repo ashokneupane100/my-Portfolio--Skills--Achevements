@@ -16,6 +16,8 @@ import CssGrid from './pages/css/CssGrid';
 import CssThree from './pages/css/CssThree';
 import CssFour from './pages/css/CssFour';
 import CssFive from './pages/css/CssFive';
+import HeartAnimation from './pages/javascript/HeartAnimation';
+import JavaScriptMain from './pages/javascript/JavaScriptMain';
 
 
 // Extracted Routes Component
@@ -33,6 +35,8 @@ const AppRoutes = () => (
     <Route path="/cssthree" element={<CssThree />} />
     <Route path="/cssfour" element={<CssFour />} />
     <Route path="/cssfive" element={<CssFive />} />
+    <Route path="/jsone" element={<HeartAnimation />} />
+    <Route path="/javascript" element={<JavaScriptMain />} />
    
   </Routes>
 );

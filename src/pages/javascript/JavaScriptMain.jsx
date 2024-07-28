@@ -1,90 +1,90 @@
-import css from "../../../public/css.jpg";
+import js from "../../../public/javascript.png";
 import { Link } from "react-router-dom";
 
-function CssMain() {
+function JavaScriptMain() {
   const cardItem = [
     {
       id: 1,
-      logo: css,
-      name: "Day 1",
-      link: "/cssone",
+      logo: js,
+      name: "1. Heart Animation Project Using Javascript",
+      link: "/jsone",
     },
 
     {
       id: 2,
-      logo: css,
+      logo: js,
       name: "Day 2",
-      link: "/csstwo",
+      link: "/jstwo",
     },
 
     {
       id: 3,
-      logo: css,
+      logo: js,
       name: "Day 3",
-      link: "/cssthree",
+      link: "/jsthree",
     },
 
     {
       id: 4,
-      logo: css,
-      name: "4.CSS Grid Project",
-      link: "/cssfour",
+      logo: js,
+      name: "",
+      link: "/jsfour",
     },
 
     {
       id: 5,
-      logo: css,
-      name: "5. CSS Lists and Icons",
-      link: "/cssfive",
+      logo: js,
+      name: "5. ",
+      link: "/jsfive",
     },
     {
       id: 6,
-      logo: css,
-      name: "6.Simple Menu",
-      link: "/csssix",
+      logo: js,
+      name: "Day 6",
+      link: "/jssix",
     },
 
 
     {
       id: 7,
-      logo: css,
+      logo: js,
       name: "Day 7",
-      link: "/cssseven",
+      link: "/jsseven",
     },
 
     {
       id: 8,
-      logo: css,
+      logo: js,
       name: "Day 8",
-      link: "/csseight",
+      link: "/jseight",
     },
 
     {
       id: 9,
-      logo: css,
+      logo: js,
       name: "Day 9",
-      link: "/cssnine",
+      link: "/jsnine",
     },
 
     {
       id: 10,
-      logo: css,
+      logo: js,
       name: "Day 10",
-      link: "/cssten",
+      link: "/jsten",
     },
 
     {
       id: 11,
-      logo: css,
+      logo: js,
       name: "Day 11",
-      link: "/csseleven",
+      link: "/jseleven",
     },
 
     {
       id: 12,
-      logo: css,
+      logo: js,
       name: "Day 12",
-      link: "/csstwelve",
+      link: "/jstwelve",
     },
 
 
@@ -112,7 +112,7 @@ function CssMain() {
           {cardItem.map(({ id, logo, name, link }) => (
             <Link key={id} to={link}>
               <div
-                className="flex flex-col items-center justify-center bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition duration-300 cursor-pointer hover:scale-110"
+                className="flex flex-col items-center justify-center bg-black rounded-lg overflow-hidden shadow-md hover:shadow-xl transition duration-300 cursor-pointer text-gray-300 hover:scale-110"
               >
                 <img
                   src={logo}
@@ -131,4 +131,4 @@ function CssMain() {
   );
 }
 
-export default CssMain;
+export default JavaScriptMain;
