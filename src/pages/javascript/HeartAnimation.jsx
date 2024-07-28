@@ -2,7 +2,14 @@ import { useEffect, useRef } from "react";
 import styles from "./HeartAnimation.module.css";
 
 const HeartAnimation = () => {
-  
+  useEffect(() => {
+    // Calculate the middle of the page
+    const middleX = document.documentElement.scrollWidth / 2 - window.innerWidth / 2;
+    const middleY = document.documentElement.scrollHeight / 2 - window.innerHeight / 2;
+    // Scroll to the middle of the page
+    window.scrollTo(middleX, middleY);
+  }, []);
+
   const containerRef = useRef(null);
 
   useEffect(() => {
