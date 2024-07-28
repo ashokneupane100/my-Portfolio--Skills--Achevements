@@ -27,7 +27,7 @@ function CssMain() {
     {
       id: 4,
       logo: css,
-      name: "Day 4",
+      name: "4.Photo Collage CSS Grid Project",
       link: "/cssfour",
     },
 
