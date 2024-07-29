@@ -19,6 +19,7 @@ import CssFive from './pages/css/CssFive';
 import HeartAnimation from './pages/javascript/HeartAnimation';
 import JavaScriptMain from './pages/javascript/JavaScriptMain';
 import DistrictHeadquarters from './pages/javascript/DistrictHeadquarters';
+import CalenderClock from './pages/javascript/CalenderClock';
 
 
 // Extracted Routes Component
@@ -39,6 +40,7 @@ const AppRoutes = () => (
     <Route path="/jstwo" element={<HeartAnimation />} />
     <Route path="/javascript" element={<JavaScriptMain />} />
     <Route path="/jsone" element={<DistrictHeadquarters />} />
+    <Route path="/jsthree" element={<CalenderClock />} />
    
   </Routes>
 );
