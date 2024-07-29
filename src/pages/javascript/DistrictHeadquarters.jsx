@@ -88,7 +88,7 @@ const DistrictHeadquarters = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       const currentDistrict = districts[districtIndex];
-      const fullText = `District: ${currentDistrict.district} <br> Headquarter: ${currentDistrict.headquarters}.`;
+      const fullText = `District: ${currentDistrict.district} <br><br> Headquarter: ${currentDistrict.headquarters}.`;
       setText(fullText);
 
       setDistrictIndex((prevIndex) => (prevIndex + 1) % districts.length);

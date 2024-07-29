@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Anton&family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Roboto:ital,wght@0,400;1,900&display=swap");
 
 .autoTextAnimation {
-  margin: 4em;
+  margin: 2em;
   text-align: center;
 }
 
@@ -10,27 +10,30 @@
   text-decoration: underline;
   color: green;
   font-weight: bolder;
-  
 }
 
-.container{
-    margin-bottom: 1.5rem;
+.container {
+  margin-bottom: 1.5rem;
 }
 
 .container h1 {
   font-size: 2.8em;
   padding: 1.5em;
-  border-radius:10%;
-  color: rgb(22, 22, 22);
-  color:blue;
-  text-decoration:wavy;
-  background-color: white;
+  border-radius: 10%;
+  color: blue;
+  text-decoration: wavy;
   line-height: 1.5em;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius:50px;
+  box-shadow: 1px 0 100px 1px  purple;
 }
 
+/* Tablet View */
 @media (max-width: 768px) {
   .autoTextAnimation {
-    font-size: 1.2em;
+    margin: 1.5em;
   }
 
   .district {
@@ -39,12 +42,14 @@
 
   .container h1 {
     font-size: 2em;
+    padding: 1em;
   }
 }
 
+/* Mobile View */
 @media (max-width: 480px) {
   .autoTextAnimation {
-    font-size: 1.4em;
+    margin: 1em;
   }
 
   .district {
@@ -53,5 +58,6 @@
 
   .container h1 {
     font-size: 1.5em;
+    padding: 0.5em;
   }
 }
