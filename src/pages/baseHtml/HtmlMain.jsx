@@ -89,18 +89,15 @@ function HtmlMain() {
     >
       <div className="max-w-screen-2xl mx-auto px-4 md:px-20">
         <h1 className="text-4xl font-bold text-center mb-8">
-          Learned CSS By Days:
+          HTML Learned By Days:
         </h1>
-        <p className="text-center text-xl text-gray-800 mb-8">
-          CSS also known as cascading style sheet is the core technology of
-          world wide web; I have been continuously updating on these
-          technologies; click on each section to see what I have been getting
-          and doing with these skills.
+        <p className="text-center text-xl text-black mb-8">
+        HTML, or HyperText Markup Language, is the standard language used to create and design documents on the World Wide Web. It provides the basic structure of web pages, using a system of tags and attributes to define elements such as headings, paragraphs, links, images, and more.
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-7">
           {cardItem.map(({ id, logo, name, link }) => (
             <Link key={id} to={link}>
-              <div className="flex flex-col items-center justify-center bg-black rounded-lg overflow-hidden shadow-md hover:shadow-xl transition duration-300 cursor-pointer hover:scale-110">
+              <div className="flex flex-col items-center justify-center bg-black rounded-lg overflow-hidden shadow-md hover:shadow-xl transition text-gray-200 duration-300 cursor-pointer hover:scale-110">
                 <img
                   src={logo}
                   className="bg-black w-32 h-32 rounded-full mt-4"

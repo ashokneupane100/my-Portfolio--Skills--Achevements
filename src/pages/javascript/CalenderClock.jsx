@@ -1,4 +1,10 @@
 export default function CalenderClock() {
+  window.scrollTo({
+    top: 0,
+    left: 0,
+    behavior: 'smooth'
+});
+
   const iframeStyle = {
     width: '100%',
     height: '100vh',
