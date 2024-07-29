@@ -7,14 +7,14 @@ function JavaScriptMain() {
     {
       id: 1,
       logo: js,
-      name: "1. Nepal:Districts and Headquarters",
+      name: "1. Nepal Districts: Headquarters",
       link: "/jsone",
     },
 
     {
       id: 2,
       logo: js,
-      name: "2. Heart Animation",
+      name: "2.        Trailing Heart Animation",
       link: "/jstwo",
     },
 
@@ -102,7 +102,7 @@ function JavaScriptMain() {
     >
       <div className="max-w-screen-2xl mx-auto px-4 md:px-20">
         <h1 className="text-4xl font-bold text-center mb-8">
-          Learned CSS By Days:
+          Learned JavaScript by Projects:
         </h1>
         <p className="text-center text-xl text-gray-800 mb-8">
          CSS also known as cascading style sheet is the core technology of world wide web; I
