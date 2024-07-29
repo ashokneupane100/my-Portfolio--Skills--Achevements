@@ -36,9 +36,9 @@ const AppRoutes = () => (
     <Route path="/cssthree" element={<CssThree />} />
     <Route path="/cssfour" element={<CssFour />} />
     <Route path="/cssfive" element={<CssFive />} />
-    <Route path="/jsone" element={<HeartAnimation />} />
+    <Route path="/jstwo" element={<HeartAnimation />} />
     <Route path="/javascript" element={<JavaScriptMain />} />
-    <Route path="/jstwo" element={<DistrictHeadquarters />} />
+    <Route path="/jsone" element={<DistrictHeadquarters />} />
    
   </Routes>
 );

@@ -98,17 +98,19 @@ const DistrictHeadquarters = () => {
   }, [districtIndex]);
 
   return (
-    <div className="mt-20 mb-36">
+    <div className="mt-28 mb-36">
       <div>
         <div className={styles.autoTextAnimation}>
           <h1 className={styles.district}>
             District and Headquarters of Nepal:
           </h1>
           <br />
+ 
           <div
-            className={styles.container}
+            className={`${styles.container}`}
             dangerouslySetInnerHTML={{ __html: `<h1>${text}</h1>` }}
           />
+          
         </div>
       </div>
       <div className="text-center text-white">

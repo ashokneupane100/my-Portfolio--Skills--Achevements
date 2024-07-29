@@ -7,14 +7,14 @@ function JavaScriptMain() {
     {
       id: 1,
       logo: js,
-      name: "1. Heart Animation Project Using Javascript",
+      name: "1. Nepal:Districts and Headquarters",
       link: "/jsone",
     },
 
     {
       id: 2,
       logo: js,
-      name: "2.District Headquarters",
+      name: "2. Heart Animation",
       link: "/jstwo",
     },
 
