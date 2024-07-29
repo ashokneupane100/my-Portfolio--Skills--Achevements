@@ -21,7 +21,7 @@ function JavaScriptMain() {
     {
       id: 3,
       logo: js,
-      name: "Day 3",
+      name: "Calender With Clock",
       link: "/jsthree",
     },
 
