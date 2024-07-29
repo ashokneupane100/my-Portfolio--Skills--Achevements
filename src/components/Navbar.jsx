@@ -55,25 +55,23 @@ function Navbar() {
 
         {/* Mobile navbar */}
         {menu && (
-       <div className="bg-green-100">
-       <ul className="md:hidden flex flex-col h-screen items-center justify-start space-y-6 text-xl pt-28">
-         {navItems.map(({ id, text, url }) => (
-           <li
-             className="hover:scale-105 duration-200 font-bold text-2xl cursor-pointer"
-             key={id}
-           >
-             <Link
-               onClick={() => setMenu(!menu)}
-               to={url}
-             >
-               {text}
-             </Link>
-           </li>
-         ))}
-       </ul>
-     </div>
-     
-     
+          <div className="bg-green-100">
+            <ul className="md:hidden flex flex-col h-screen items-center justify-start space-y-6 text-xl pt-28">
+              {navItems.map(({ id, text, url }) => (
+                <li
+                  className="hover:scale-105 duration-200 font-bold text-2xl cursor-pointer"
+                  key={id}
+                >
+                  <Link
+                    onClick={() => setMenu(!menu)}
+                    to={url}
+                  >
+                    {text}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
         )}
       </div>
     </>

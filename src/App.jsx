@@ -20,7 +20,7 @@ import HeartAnimation from './pages/javascript/HeartAnimation';
 import JavaScriptMain from './pages/javascript/JavaScriptMain';
 import DistrictHeadquarters from './pages/javascript/DistrictHeadquarters';
 import CalenderClock from './pages/javascript/CalenderClock';
-
+import RippleButton5 from './pages/javascript/RippleButton5';
 
 // Extracted Routes Component
 const AppRoutes = () => (
@@ -41,7 +41,7 @@ const AppRoutes = () => (
     <Route path="/javascript" element={<JavaScriptMain />} />
     <Route path="/jsone" element={<DistrictHeadquarters />} />
     <Route path="/jsthree" element={<CalenderClock />} />
-   
+    <Route path="/jsfour" element={<RippleButton5 />} />
   </Routes>
 );
 
@@ -51,7 +51,7 @@ function App() {
       <Toaster />
       <div className="flex flex-col min-h-screen">
         <Navbar />
-        <main className="flex-grow">
+        <main className="flex-grow pt-16"> {/* Added padding-top to avoid overlap */}
           <AppRoutes />
         </main>
         <Footer />

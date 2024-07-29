@@ -21,14 +21,14 @@ function JavaScriptMain() {
     {
       id: 3,
       logo: js,
-      name: "Calender With Clock",
+      name: "3. Calender With Clock",
       link: "/jsthree",
     },
 
     {
       id: 4,
       logo: js,
-      name: "",
+      name: "4. Ripple effect in a button",
       link: "/jsfour",
     },
 
