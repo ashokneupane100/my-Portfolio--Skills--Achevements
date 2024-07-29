@@ -113,7 +113,7 @@ function CssMain() {
           {cardItem.map(({ id, logo, name, link }) => (
             <Link key={id} to={link}>
               <div
-                className="flex flex-col items-center justify-center bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition duration-300 cursor-pointer hover:scale-110"
+                className="flex flex-col items-center justify-center bg-white text-black rounded-lg overflow-hidden shadow-md hover:shadow-xl transition duration-300 cursor-pointer hover:scale-110"
               >
                 <img
                   src={logo}

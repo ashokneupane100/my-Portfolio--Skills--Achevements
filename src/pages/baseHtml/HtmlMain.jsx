@@ -100,10 +100,10 @@ function HtmlMain() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-7">
           {cardItem.map(({ id, logo, name, link }) => (
             <Link key={id} to={link}>
-              <div className="flex flex-col items-center justify-center bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition duration-300 cursor-pointer hover:scale-110">
+              <div className="flex flex-col items-center justify-center bg-black rounded-lg overflow-hidden shadow-md hover:shadow-xl transition duration-300 cursor-pointer hover:scale-110">
                 <img
                   src={logo}
-                  className="w-32 h-32 rounded-full mt-4"
+                  className="bg-black w-32 h-32 rounded-full mt-4"
                   alt={name}
                 />
                 <div className="p-4 text-center">
