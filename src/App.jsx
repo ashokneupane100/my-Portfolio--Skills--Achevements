@@ -20,6 +20,7 @@ import HeartAnimation from './pages/javascript/HeartAnimation';
 import JavaScriptMain from './pages/javascript/JavaScriptMain';
 import DistrictHeadquarters from './pages/javascript/DistrictHeadquarters';
 import CalenderClock from './pages/javascript/CalenderClock';
+import RandomImage4 from './pages/javascript/RandomImage4';
 import RippleButton5 from './pages/javascript/RippleButton5';
 
 // Extracted Routes Component
@@ -41,7 +42,8 @@ const AppRoutes = () => (
     <Route path="/javascript" element={<JavaScriptMain />} />
     <Route path="/jsone" element={<DistrictHeadquarters />} />
     <Route path="/jsthree" element={<CalenderClock />} />
-    <Route path="/jsfour" element={<RippleButton5 />} />
+    <Route path="/jsfour" element={<RandomImage4 />} />
+    <Route path="/jsfive" element={<RippleButton5 />} />
   </Routes>
 );
 

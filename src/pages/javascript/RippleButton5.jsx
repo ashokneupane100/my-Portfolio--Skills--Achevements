@@ -27,7 +27,7 @@ const RippleButton5 = () => {
         </h1>
       </div>
 
-      <div className="flex flex-col items-center space-y-2"> {/* Stack buttons vertically with space */}
+      <div className="flex flex-col items-center space-y-2"> 
         <a
           href="https://github.com/ashokneupane100/500-Plus-JavaScript-Projects/tree/main/Button%20Ripple%20Effect"
           target="_blank"

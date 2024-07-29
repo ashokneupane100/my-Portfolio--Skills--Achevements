@@ -21,23 +21,24 @@ function JavaScriptMain() {
     {
       id: 3,
       logo: js,
-      name: "3. Calender With Clock",
+      name: "3. Beautiful Calender  With Clock",
       link: "/jsthree",
     },
 
     {
       id: 4,
       logo: js,
-      name: "4. Ripple effect in a button",
+      name: "4. Random Image Generator  ",
       link: "/jsfour",
     },
 
     {
       id: 5,
       logo: js,
-      name: "5. ",
+      name: "5. Ripple effect in button",
       link: "/jsfive",
     },
+
     {
       id: 6,
       logo: js,
