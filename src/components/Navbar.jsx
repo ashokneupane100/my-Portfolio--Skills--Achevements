@@ -16,15 +16,15 @@ function Navbar() {
 
   return (
     <>
-      <div className="max-w-screen-2xl container mx-auto px-4 md:px-20 h-16 shadow-md fixed top-0 left-0 right-0 z-50 bg-white">
+      <div className="max-w-screen-2xl container mx-auto px-4 md:px-20 h-16 shadow-md fixed top-0 left-0 right-0 z-50 bg-gray-900 text-white">
         <div className="flex justify-between items-center h-16">
           <Link to="/" className="flex items-center space-x-2">
             <img src={pic} className="h-12 w-12 rounded-full" alt="" />
             <div className="flex flex-col">
               <h1 className="font-semibold text-xl cursor-pointer">
-                Ashok <span className="text-green-800 text-2xl">Neupane</span>
+                Ashok <span className="text-blue-500 text-2xl">Neupane</span>
               </h1>
-              <p className="text-sm text-center md:text-left">
+              <p className="text-sm text-center md:text-left text-gray-400">
                 Full Stack Web Developer
               </p>
             </div>
@@ -38,7 +38,10 @@ function Navbar() {
                   className="hover:scale-105 duration-200 cursor-pointer"
                   key={id}
                 >
-                  <Link to={url}>{text}</Link>
+                  <Link to={url} className="relative">
+                    {text}
+                    <span className="absolute bottom-0 left-0 w-0 h-1 bg-blue-500 transition-all duration-300 hover:w-full"></span>
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -55,18 +58,20 @@ function Navbar() {
 
         {/* Mobile navbar */}
         {menu && (
-          <div className="bg-green-100">
+          <div className="bg-gray-900 text-white">
             <ul className="md:hidden flex flex-col h-screen items-center justify-start space-y-6 text-xl pt-28">
               {navItems.map(({ id, text, url }) => (
                 <li
-                  className="hover:scale-105 duration-200 font-bold text-2xl cursor-pointer"
+                  className="hover:scale-110 duration-200 font-bold text-2xl cursor-pointer"
                   key={id}
                 >
                   <Link
                     onClick={() => setMenu(!menu)}
                     to={url}
+                    className="relative"
                   >
                     {text}
+                    <span className="absolute bottom-0 left-0 w-0 h-1 bg-blue-500 transition-all duration-300 hover:w-full"></span>
                   </Link>
                 </li>
               ))}
@@ -78,4 +83,4 @@ function Navbar() {
   );
 }
 
-export default Navbar;
+export default Navbar

@@ -23,7 +23,7 @@ function Experience() {
   return (
     <div
       name="Experience"
-      className="w-full px-4 mt-10 py-20 bg-gray-100"
+      className="w-full px-4 mt-10 py-20 bg-green-100"
     >
       <div className="max-w-screen-2xl mx-auto px-4 md:px-20">
         <h1 className="text-4xl font-bold text-center mb-8">
@@ -38,7 +38,7 @@ function Experience() {
           {cardItem.map(({ id, logo, name, link }) => (
             <div
               key={id}
-              className="flex flex-col items-center justify-center bg-black text-gray-200 rounded-lg overflow-hidden shadow-md hover:shadow-xl transition duration-300 cursor-pointer hover:scale-105"
+              className="flex flex-col items-center justify-center bg-black text-gray-200 rounded-lg overflow-hidden shadow-md hover:shadow-xl transition duration-300 cursor-pointer hover:scale-110"
               onClick={() => (window.location.href = link)}
             >
               <img
