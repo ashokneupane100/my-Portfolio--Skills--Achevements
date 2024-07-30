@@ -28,8 +28,13 @@ const DarkMode6 = () => {
   };
 
   return (
-    <div className='mt-[-7em]'>
-         <div className={styles.container}>
+    <div className={`${styles.container} ${styles.responsive}`}>
+      <div className={`${styles.content} mt-60 md:mt-10`}>
+        <h1 className={styles.description}>
+          Here we will use simple Javascript for making toggle on and off for changing into the dark and light theme. For the detailed code, click the link and open the GitHub.
+        </h1>
+      </div>
+      <br /> <br />
       <h1 className={styles.title}>Dark Mode Toggle</h1>
       <div className={styles.toggleContainer}>
         <input
@@ -44,7 +49,15 @@ const DarkMode6 = () => {
         </label>
       </div>
       <h3 className={styles.toggleText}>Click to toggle Dark Mode ON and OFF</h3>
-    </div>
+      <br />
+      <div className={styles.sourceCodeContainer}>
+        <br /> <br />
+        <a href="https://github.com/ashokneupane100/500-Plus-JavaScript-Projects/tree/main/darkModeToggle" target="_blank" rel="noopener noreferrer">
+          <button className={`${styles.btn} bg-green-800 text-xl p-3 rounded-lg`}>
+            Click Here for the Source Code
+          </button>
+        </a>
+      </div>
     </div>
   );
 };
