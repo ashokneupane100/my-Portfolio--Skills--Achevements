@@ -22,6 +22,7 @@ import DistrictHeadquarters from './pages/javascript/DistrictHeadquarters';
 import CalenderClock from './pages/javascript/CalenderClock';
 import RandomImage4 from './pages/javascript/RandomImage4';
 import RippleButton5 from './pages/javascript/RippleButton5';
+import DarkMode6 from './pages/javascript/DarkMode6';
 
 // Extracted Routes Component
 const AppRoutes = () => (
@@ -44,6 +45,7 @@ const AppRoutes = () => (
     <Route path="/jsthree" element={<CalenderClock />} />
     <Route path="/jsfour" element={<RandomImage4 />} />
     <Route path="/jsfive" element={<RippleButton5 />} />
+    <Route path="/jssix" element={<DarkMode6 />} />
   </Routes>
 );
 

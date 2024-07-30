@@ -1,0 +1,92 @@
+/* Reset some default styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  transition: background 0.4s, color 0.4s;
+}
+
+/* Container styling */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Title styling */
+.title {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: inherit; /* Inherit color from body */
+}
+
+/* Toggle container styling */
+.toggleContainer {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+/* Hide the default checkbox */
+.input {
+  display: none;
+}
+
+/* Label styling */
+.label {
+  width: 80px;
+  height: 40px;
+  background-color: white; /* Initial background color */
+  border-radius: 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  transition: background-color 0.4s;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Circle styling */
+.circle {
+  width: 34px;
+  height: 34px;
+  background-color: rgb(15, 15, 15); /* Circle color */
+  border-radius: 50%;
+  position: absolute;
+  left: 3px;
+  transition: transform 0.4s;
+}
+
+/* Change styles when the checkbox is checked */
+.input:checked + .label {
+  background-color: rgb(141, 137, 137); /* Change label background to black when checked */
+}
+
+.input:checked + .label .circle {
+  transform: translateX(40px); /* Move circle to the right when checked */
+}
+
+/* Text styling */
+.toggleText {
+  font-size: 1.2rem;
+  color: inherit; /* Inherit color from body */
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .title {
+    font-size: 2rem; /* Smaller title on mobile */
+  }
+  .toggleText {
+    font-size: 1rem; /* Smaller text on mobile */
+  }
+}

@@ -42,7 +42,7 @@ function JavaScriptMain() {
     {
       id: 6,
       logo: js,
-      name: "Day 6",
+      name: "Swith ON/OFF Dark Mode ",
       link: "/jssix",
     },
 
