@@ -28,7 +28,7 @@ export default function Temperature7() {
   };
 
   return (
-    <div className="mt-1">
+    <div>
     <div style={containerStyle}>
       <iframe
         src="https://temperature-conversioon.netlify.app/"

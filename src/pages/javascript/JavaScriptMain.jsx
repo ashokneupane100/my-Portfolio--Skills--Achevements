@@ -50,7 +50,7 @@ function JavaScriptMain() {
     {
       id: 7,
       logo: js,
-      name: "Day 7",
+      name: "7.Temperature Converter",
       link: "/jsseven",
     },
 
